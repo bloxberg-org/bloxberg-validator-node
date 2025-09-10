@@ -25,13 +25,13 @@ Validator nodes play a crucial role in the Bloxberg blockchain by verifying tran
 ### Configure the Validator
 
 - Edit the docker-compose.yml file with a text editor (e.g., nano or vim).
-- Locate the NATIP variable and replace it with your server's external IP address.
+- Locate the NAT_IP variable and replace it with your server's external IP address.
 - Save the changes.
 
 ### Set Validator Password
 
 - Navigate to the src/validator-data directory.
-- Open the validator/validator.pwd file using a text editor.
+- Open the validator.pwd file using a text editor.
 - Create a strong password to encrypt your private key.
 - Save the password securely.
 
@@ -42,13 +42,13 @@ Validator nodes play a crucial role in the Bloxberg blockchain by verifying tran
 
 ### Start the Validator
 
-- Return to the root directory (/) on the server.
-- Run the `command docker-compose up` in the terminal.
-- This initiates the Docker container and generates an Authority Address.
+- Return to the repository root directory.
+- Run the command `sudo docker-compose up` in the terminal.
+- This will take some time and initiates the Docker container and generates an Authority Address.
 
 ### Register with Bloxberg Association
 
-- Copy the Authority Address obtained in step 5.
+- Copy the Authority Address obtained in the previous step.
 - Provide this address to the Bloxberg Association for registration purposes.
 
 ### Run the Validator in Background
